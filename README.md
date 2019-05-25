@@ -2,7 +2,7 @@
 
 ## Description
 
-In this lesson you will learn that WordPress themes often include a file named functions.php, which is where unique features and custom functions can be added. However, plugins are also meant to add features and functionalities to your site. When should you use functions.php to add your custom code and when should you use plugins?  This lesson will help you understand the difference between the two.
+In this lesson you will learn that WordPress themes often include a file named functions.php, which is where unique features and custom functions can be added. However, plugins are also meant to add features and functionalities to your site. When should you use functions.php to add your custom code and when should you use plugins? This lesson will help you understand the difference between the two.
 
 ## Objectives
 
@@ -46,19 +46,19 @@ The functions.php file is used to add, remove, or otherwise change the default b
 
 Since functions.php and plugins both allow you to create custom functionality and modify default behaviour in WordPress, it can be a bit confusing to understand when to use functions.php and when to create or use a plugin to add functionality, but by looking into both methods in more detail you can get a better understanding of when each solution is appropriate. In general, plugins are independent modules that can be downloaded and installed on your WordPress website. The purpose of a plugin is to extend WordPress' functionality or add new features. No modification of the active theme is required to activate plugins. In contrast, themes are a group of files designed to modify the way WordPress looks. While themes can include custom functionality (custom post types, a visual configuration panel, etc), for the most part you select themes based on the way they'll modify how the user experiences your website. The basic characteristics that define and distinguish WordPress plugins versus the functions.php file are: **A WordPress plugin...**
 
-*   requires specific, unique header text.
-*   is stored in <tt>wp-content/plugins</tt>, usually in a subdirectory.
-*   executes only when individually activated, via the "plugins" panel.
-*   applies to all themes.
-*   should have a single purpose, e.g., convert posts to pages, offer search engine optimization features, or help with backups.
+*   Requires specific, unique header text.
+*   Is stored in <tt>wp-content/plugins</tt>, usually in a subdirectory.
+*   Executes only when individually activated, via the "plugins" panel.
+*   Applies to all themes.
+*   Should have a single purpose, e.g., convert posts to pages, offer search engine optimization features, or help with backups.
 
 **A functions.php file...**
 
-*   requires no unique header text.
-*   is stored with each Theme in the Theme's subdirectory in <tt>wp-content/themes</tt>.
-*   executes only when in the currently activated theme's directory.
-*   applies only to that theme. If the Theme is changed, the functionality is lost.
-*   can have numerous blocks of code used for many different purposes.
+*   Requires no unique header text.
+*   Is stored with each Theme in the Theme's subdirectory in <tt>wp-content/themes</tt>.
+*   Executes only when in the currently activated theme's directory.
+*   Applies only to that theme. If the Theme is changed, the functionality is lost.
+*   Can have numerous blocks of code used for many different purposes.
 
 ### When to use functions.php
 
@@ -66,11 +66,11 @@ We could infer that if the custom functionality relates to visual presentation, 
 
 ### Things that could go into functions.php:
 
-*   content formatting
-*   theme specific header and footer functionalities
+*   Content formatting
+*   Theme specific header and footer functionalities
 *   WordPress hooks to change output, for example using the excerpt_length filter to change the length of a post excerpt
-*   code that enables theme support for post thumbnails, post formats, and navigation menus
-*   functions you'd like to reuse in multiple theme template files
+*   Code that enables theme support for post thumbnails, post formats, and navigation menus
+*   Functions you'd like to reuse in multiple theme template files
 
 ### Things that shouldn't go into functions.php:
 
